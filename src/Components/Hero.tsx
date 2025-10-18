@@ -9,7 +9,7 @@ export default function Hero() {
 
         {/* Line 2: Name */}
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-light">
-          Addy<span className="text-primary px-3">Jaime</span>
+          Addy<span className="text-accent px-3">Jaime</span>
         </h1>
 
         {/* Line 3: Profession */}
@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="mt-12 flex flex-wrap gap-5 justify-start">
           <a
             href="#Work"
-            className="px-7 py-3.5 rounded-xl bg-primary text-light font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
+            className="px-7 py-3.5 rounded-xl bg-accent text-light font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
           >
             See my work
           </a>

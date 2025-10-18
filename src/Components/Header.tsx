@@ -5,7 +5,7 @@ export default function Header() {
         {/*Logo A*/}
         <a
           href="#home"
-          className="inline-flex h-12 w-12 md:w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-2xl md:text-3xl font-extrabold text-primary hover:bg-white/10 "
+          className="inline-flex h-12 w-12 md:w-14 items-center justify-center rounded-2xl border   border-white/10 bg-white/5 text-2xl md:text-3xl font-extrabold text-accent hover:bg-white/10 "
           aria-label="Go to home"
           title="Home"
         >

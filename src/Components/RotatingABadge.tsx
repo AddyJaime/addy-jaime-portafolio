@@ -10,19 +10,19 @@ export default function RotatingABadge() {
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute left-8 top-7 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border-2 border-primary/30 rounded-3xl bg-transparent"
+        className="absolute left-8 top-7 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border-2 border-accent/30 rounded-3xl bg-transparent"
       />
 
       {/* Círculo*/}
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-        className="absolute left-8 top-7  -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border-2 border-primary/20 rounded-full bg-transparent"
+        className="absolute left-8 top-7  -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border-2 border-accent/20 rounded-full bg-transparent"
       />
 
       {/* A */}
-      <div className=" left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 relative z-10 w-64 h-64 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20 flex items-center justify-center backdrop-blur-xlg">
-        <span className="text-8xl font-bold text-primary">A</span>
+      <div className=" left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 relative z-10 w-64 h-64 bg-gradient-to-br from-primary/10 to-accent/5 rounded-2xl border border-accent/20 flex items-center justify-center backdrop-blur-xlg">
+        <span className="text-8xl font-bold text-accent">A</span>
       </div>
     </div>
   );
