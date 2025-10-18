@@ -2,30 +2,27 @@ import { motion } from "framer-motion";
 
 export default function RotatingABadge() {
   return (
-    <div className="relative w-full max-w-md aspect-square flex items-center justify-center bg-red-50">
-      {/*Glow detras*/}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-accent/5 to-transparent rounded-3xl blur-3xl" />
+    <div className="relative w-[360px] h-[360px]">
+      {/* Glow detrás */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/20 via-primary/5 to-transparent rounded-3xl blur-3xl" />
 
-      {/* Marco cuadrado rotando*/}
-      <div className=" relative flex items-center justify-center">
-        {/*Cuadrado*/}
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute  inset-0 border-2 border-accent rounded-3xl bg-transparent"
-          style={{ width: "300px", height: "300px" }}
-        />
-        {/*Circulo*/}
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute inset-0 border-2 border-accent rounded-full"
-          style={{ width: "300px", height: "300px" }}
-        />
-        {/*Letra A*/}
-        <div className="relative z-10 font-bold h-64 bg-gradient-to-br">
-          <span className="text-8xl font-bold text-accent">A</span>
-        </div>
+      {/* Cuadrado*/}
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+        className="absolute left-8 top-7 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border-2 border-primary/30 rounded-3xl bg-transparent"
+      />
+
+      {/* Círculo*/}
+      <motion.div
+        animate={{ rotate: -360 }}
+        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+        className="absolute left-8 top-7 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border-2 border-primary/20 rounded-full bg-transparent"
+      />
+
+      {/* A */}
+      <div className=" left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 relative z-10 w-64 h-64 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20 flex items-center justify-center backdrop-blur-sm">
+        <span className="text-8xl font-bold text-primary">A</span>
       </div>
     </div>
   );

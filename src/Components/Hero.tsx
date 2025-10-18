@@ -3,17 +3,17 @@ export default function Hero() {
     <section className="min-h-screen flex items-center">
       <div className="w-full max-w-3xl px-6 md:px-10 lg:pl-24 xl:pl-32 text-left">
         {/* Line 1: Presentation */}
-        <p className="text-base md:text-lg text-muted tracking-[0.32em] uppercase mb-4">
+        <p className="text-base md:text-lg text-light tracking-[0.32em] uppercase mb-4">
           Hello, I&apos;m
         </p>
 
         {/* Line 2: Name */}
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-light">
-          Addy<span className="text-accent px-3">Jaime</span>
+          Addy<span className="text-primary px-3">Jaime</span>
         </h1>
 
         {/* Line 3: Profession */}
-        <p className="mt-6 text-xl md:text-2xl text-muted max-w-3xl leading-relaxed">
+        <p className="mt-6 text-xl md:text-2xl text-light max-w-3xl leading-relaxed">
           a software engineer with 3+ years of experience. I’m passionate about
           technology and everything we can create with it — always chasing
           innovation like it’s a never-ending game.
@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="mt-12 flex flex-wrap gap-5 justify-start">
           <a
             href="#Work"
-            className="px-7 py-3.5 rounded-xl bg-accent text-black font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
+            className="px-7 py-3.5 rounded-xl bg-primary text-light font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
           >
             See my work
           </a>

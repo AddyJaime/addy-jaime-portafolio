@@ -4,10 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#6b5bff",
-        dark: "black",
-        light: "#e6eaf2",
-        muted: "#9ca3af",
+        primary: "#6B5BFF",
+        accent: "#00D1FF",
+        dark: "#0B0F14",
+        light: "#E6EAF2",
+        muted: "#94A3B8",
+        background: "#111217",
       },
       dropShadow: {
         glow: "0 0 30px rgba(107, 107, 255, 0.35)",
