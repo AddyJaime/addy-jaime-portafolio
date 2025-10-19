@@ -2,7 +2,7 @@
 
 import { Button } from "./ui/button";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
-import { Github, Linkedin, Instagram, Twitter, Users } from "lucide-react";
+import { Github, Linkedin, Instagram, Users } from "lucide-react";
 
 const socialLinks = [
   {
@@ -19,11 +19,6 @@ const socialLinks = [
     icon: Instagram,
     href: "https://instagram.com/addyjaime.dev",
     label: "Instagram",
-  },
-  {
-    icon: Twitter,
-    href: "https://twitter.com/addyjaime",
-    label: "Twitter",
   },
 ];
 
