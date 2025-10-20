@@ -6,9 +6,8 @@ html,
 body,
 #root {
   height: 100%;
+  overflow: hidden;
 }
-
-
 
 @layer base {
   :root {
@@ -65,8 +64,6 @@ body,
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

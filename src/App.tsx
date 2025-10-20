@@ -1,19 +1,28 @@
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
-
 import RotatingABadge from "./Components/RotatingABadge";
-import SocialsPopover from "./Components/SocialsPopover";
+import TopActions from "./Components/TopActions";
+import Portfolio from "./Components/Portfolio";
 
-function App() {
+export default function App() {
   return (
     <main className="bg-[#12121a] min-h-screen text-light relative overflow-hidden">
       <Header />
-      <SocialsPopover />
-      <section className="mx-auto max-w-[1200px] pt-1 -ml-20 flex items-center justify-start  gap-15">
+
+      {/* Socials + Portfolio */}
+      <TopActions />
+
+      {/* HOME */}
+      <section
+        id="home"
+        className="mx-auto max-w-[1200px] pt-24 -ml-20 flex items-center justify-start gap-16"
+      >
         <Hero />
         <RotatingABadge />
       </section>
+
+      {/* PORTFOLIO */}
+      <Portfolio />
     </main>
   );
 }
-export default App;

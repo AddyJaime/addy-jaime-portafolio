@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center">
-      <div className="w-full max-w-3xl  md:px-10 lg:pl-24 xl:pl-32 text-left">
+      <div className="w-full max-w-3xl mb-[120px]  md:px-10 lg:pl-24 xl:pl-32 text-left">
         {/* Line 1: Presentation */}
         <p className="text-base md:text-lg text-light tracking-[0.32em] uppercase mb-4">
           Hello, I&apos;m

@@ -24,7 +24,7 @@ const socialLinks = [
 
 export default function SocialsPopover() {
   return (
-    <div className="fixed top-12 right-[85%] z-50">
+    <div className="fixed top-16 ml-[190px] z-50">
       <Popover>
         <PopoverTrigger asChild>
           <Button
