@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center">
+    <section id="home" className="min-h-screen scroll-mt-24 flex items-center">
       <div className="w-full max-w-3xl mb-[120px]  md:px-10 lg:pl-24 xl:pl-32 text-left">
         {/* Line 1: Presentation */}
         <p className="text-base md:text-lg text-light tracking-[0.32em] uppercase mb-4">
@@ -22,13 +22,13 @@ export default function Hero() {
         {/* Line 4: Buttons */}
         <div className="mt-12 flex flex-wrap gap-5 justify-start">
           <a
-            href="#Work"
+            href="#portfolio"
             className="px-7 py-3.5 rounded-xl bg-accent text-light font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
           >
             See my work
           </a>
           <a
-            href="#Contact"
+            href="#contact"
             className="px-7 py-3.5 rounded-xl bg-light text-black font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
           >
             Get in touch
