@@ -6,10 +6,29 @@ html,
 body,
 #root {
   height: 100%;
+}
+html {
+  scroll-behavior: smooth;
   overflow: hidden;
-  html {
-    scroll-behavior: smooth;
-  }
+}
+
+.screen {
+  position: fixed;
+  inset: 0;
+  padding-top: 5rem;
+  display: none;
+}
+
+:target.screen {
+  display: block;
+  z-index: 2;
+}
+#home.screen {
+  display: none;
+}
+
+:root:not(:has(:target)) #home.screen {
+  display: block;
 }
 
 @layer base {
