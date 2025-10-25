@@ -6,7 +6,7 @@ import Portfolio from "./Components/Portfolio";
 
 export default function App() {
   return (
-    <main className="bg-[#12121a] h-screen text-light relative">
+    <main className="bg-[#1E212B] h-screen text-light relative">
       <Header />
       <TopActions />
 

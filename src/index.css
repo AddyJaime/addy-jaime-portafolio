@@ -23,14 +23,9 @@ html {
   display: block;
   z-index: 2;
 }
-#home.screen {
-  display: none;
-}
-
 :root:not(:has(:target)) #home.screen {
   display: block;
 }
-
 @layer base {
   :root {
     --background: 0 0% 100%;

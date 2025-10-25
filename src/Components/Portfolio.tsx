@@ -23,8 +23,6 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="pt-20 scroll-mt-24">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
-        <h2 className="text-3xl font-bold text-light">Projects</h2>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {projects.slice(0, 4).map((p) => (
             <ProjectCard key={p.code ?? p.live ?? p.title} p={p} />
