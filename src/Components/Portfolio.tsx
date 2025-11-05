@@ -1,5 +1,5 @@
-// src/Components/Portfolio.tsx
 import { ProjectCard, type Project } from "./ProjectCard";
+import talk2meVideo from "/src/images/talk2me.mov";
 
 const projects: Project[] = [
   {
@@ -12,8 +12,9 @@ const projects: Project[] = [
   },
   {
     title: "Talk2Me (Chat)",
-    description: "Real-time chat: RN + Socket.IO + JWT + Postgres.",
-    image: "/thumbs/talk2me.png",
+    description: "Real-time chat:  Socket.IO + JWT + Postgres.",
+    video: talk2meVideo,
+    image: "/src/images/talk2me-login-photo.png",
     tags: ["React Native", "Socket.IO", "JWT", "Postgres"],
     code: "https://github.com/tuuser/talk2me",
   },
@@ -21,10 +22,10 @@ const projects: Project[] = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="pt-20 scroll-mt-24">
+    <section className="pt-20 scroll-mt-24">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {projects.slice(0, 4).map((p) => (
+          {projects.map((p) => (
             <ProjectCard key={p.code ?? p.live ?? p.title} p={p} />
           ))}
         </div>

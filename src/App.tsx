@@ -1,28 +1,23 @@
 import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import RotatingABadge from "./Components/RotatingABadge";
 import TopActions from "./Components/TopActions";
-import Portfolio from "./Components/Portfolio";
+import { Routes, Route } from "react-router-dom";
+
+import HomePage from "./Pages/HomePage";
+import PortfolioPage from "./Pages/PortfolioPage";
+import ContactPage from "./Pages/ContactPage";
 
 export default function App() {
   return (
-    <main className="bg-[#1E212B] h-screen text-light relative">
+    <main className="bg-[#12121a] min-h-screen text-light relative overflow-hidden">
       <Header />
       <TopActions />
 
-      <section id="home" className="screen">
-        <div className="h-full w-full mr-auto max-w-[1200px] pr-10 grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] items-center gap-12">
-          <Hero />
-          <div className="flex justify-center lg:justify-end">
-            <RotatingABadge />
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" className="screen">
-        <div className="h-full mx-auto max-w-[1200px] px-6 lg:px-10 overflow-hidden">
-          <Portfolio />
-        </div>
+      <section className="pt-20">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </section>
     </main>
   );

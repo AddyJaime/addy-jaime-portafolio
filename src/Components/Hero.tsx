@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen scroll-mt-24 flex items-center">
+    <section className="min-h-screen scroll-mt-24 flex items-center ">
       <div className="w-full max-w-3xl mb-[120px]  md:px-10 lg:pl-24 xl:pl-32 text-left">
         {/* Line 1: Presentation */}
         <p className="text-base md:text-lg text-light tracking-[0.32em] uppercase mb-4">
@@ -11,28 +13,26 @@ export default function Hero() {
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-light">
           Addy<span className="text-accent px-3">Jaime</span>
         </h1>
-
         {/* Line 3: Profession */}
         <p className="mt-6 text-xl md:text-2xl text-light max-w-3xl leading-relaxed">
           a software engineer with 3+ years of experience. I’m passionate about
           technology and everything we can create with it — always chasing
           innovation like it’s a never-ending game.
         </p>
-
         {/* Line 4: Buttons */}
         <div className="mt-12 flex flex-wrap gap-5 justify-start">
-          <a
-            href="#portfolio"
+          <Link
+            to="/portfolio"
             className="px-7 py-3.5 rounded-xl bg-accent text-light font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
           >
             See my work
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="px-7 py-3.5 rounded-xl bg-light text-black font-semibold hover:opacity-90 hover:scale-105 transition-transform duration-300"
           >
             Get in touch
-          </a>
+          </Link>
         </div>
       </div>
     </section>
