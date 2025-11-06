@@ -1,7 +1,6 @@
 import Header from "./Components/Header";
 import TopActions from "./Components/TopActions";
 import { Routes, Route } from "react-router-dom";
-
 import HomePage from "./Pages/HomePage";
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";
