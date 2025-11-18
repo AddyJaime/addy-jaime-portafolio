@@ -14,7 +14,7 @@ export function ProjectCard({ p }: { p: Project }) {
   return (
     <article
       className="group relative rounded-2xl border border-white/10 bg-white/5 p-4 transition
-                 hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_10px_40px_-10px_rgba(107,91,255,0.35)]"
+ hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_10px_40px_-10px_rgba(107,91,255,0.35)]"
     >
       {p.video ? (
         <div className="relative aspect-[16/10] rounded-xl bg-white/5 overflow-hidden max-w-[80%] mx-auto">
@@ -24,7 +24,7 @@ export function ProjectCard({ p }: { p: Project }) {
             className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03] group-hover:opacity-90"
             poster={p.image}
           />
-          <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10" />
+          <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/11" />
         </div>
       ) : p.image ? (
         <div className="relative aspect-[16/10] rounded-xl bg-white/5">
