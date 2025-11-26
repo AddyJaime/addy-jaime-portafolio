@@ -15,7 +15,7 @@ html {
 .screen {
   position: fixed;
   inset: 0;
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: none;
 }
 
