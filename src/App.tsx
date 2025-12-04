@@ -7,7 +7,7 @@ import ContactPage from "./Pages/ContactPage";
 
 export default function App() {
   return (
-    <main className="bg-[#12121a] min-h-screen text-light relative overflow-hidden">
+    <main className="bg-[#16181D] min-h-screen text-light relative overflow-hidden">
       <Header />
       <TopActions />
 
